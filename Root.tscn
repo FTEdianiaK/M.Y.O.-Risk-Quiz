@@ -1,0 +1,418 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Piece.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Category.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/grey_panel.png" type="Texture" id=3]
+[ext_resource path="res://Root.gd" type="Script" id=4]
+[ext_resource path="res://assets/OpenSans-Regular.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://GUI.tscn" type="PackedScene" id=6]
+
+[sub_resource type="DynamicFont" id=2]
+size = 38
+use_filter = true
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 38
+use_filter = true
+font_data = ExtResource( 5 )
+
+[node name="Root" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Category1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 15, 15 )
+
+[node name="Label1" type="Label" parent="Category1"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 107.0
+margin_bottom = 107.0
+custom_fonts/font = SubResource( 2 )
+align = 1
+valign = 1
+
+[node name="Piece11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 15, 142 )
+
+[node name="Label11" type="Label" parent="Piece11"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 107.0
+margin_bottom = 107.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="Piece12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 15, 269 )
+
+[node name="Label12" type="Label" parent="Piece12"]
+margin_left = 5.0
+margin_top = -122.0
+margin_right = 107.0
+margin_bottom = -20.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="Piece13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 15, 396 )
+
+[node name="Label13" type="Label" parent="Piece13"]
+margin_left = 5.0
+margin_top = -249.0
+margin_right = 107.0
+margin_bottom = -147.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="Category2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 142, 15 )
+
+[node name="Label2" type="Label" parent="Category2"]
+margin_left = -122.0
+margin_top = 5.0
+margin_right = -20.0
+margin_bottom = 107.0
+custom_fonts/font = SubResource( 2 )
+align = 1
+valign = 1
+
+[node name="Piece21" parent="." instance=ExtResource( 1 )]
+position = Vector2( 142, 142 )
+
+[node name="Label21" type="Label" parent="Piece21"]
+margin_left = -122.0
+margin_top = 5.0
+margin_right = -20.0
+margin_bottom = 107.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="Piece22" parent="." instance=ExtResource( 1 )]
+position = Vector2( 142, 269 )
+
+[node name="Label22" type="Label" parent="Piece22"]
+margin_left = -122.0
+margin_top = -122.0
+margin_right = -20.0
+margin_bottom = -20.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="Piece23" parent="." instance=ExtResource( 1 )]
+position = Vector2( 142, 396 )
+
+[node name="Label23" type="Label" parent="Piece23"]
+margin_left = -122.0
+margin_top = -249.0
+margin_right = -20.0
+margin_bottom = -147.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="Category3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 269, 15 )
+
+[node name="Label3" type="Label" parent="Category3"]
+margin_left = -249.0
+margin_top = 5.0
+margin_right = -147.0
+margin_bottom = 107.0
+custom_fonts/font = SubResource( 2 )
+align = 1
+valign = 1
+
+[node name="Piece31" parent="." instance=ExtResource( 1 )]
+position = Vector2( 269, 142 )
+
+[node name="Label31" type="Label" parent="Piece31"]
+margin_left = -249.0
+margin_top = 5.0
+margin_right = -147.0
+margin_bottom = 107.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="Piece32" parent="." instance=ExtResource( 1 )]
+position = Vector2( 269, 269 )
+
+[node name="Label32" type="Label" parent="Piece32"]
+margin_left = -249.0
+margin_top = -122.0
+margin_right = -147.0
+margin_bottom = -20.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="Piece33" parent="." instance=ExtResource( 1 )]
+position = Vector2( 269, 396 )
+
+[node name="Label33" type="Label" parent="Piece33"]
+margin_left = -249.0
+margin_top = -249.0
+margin_right = -147.0
+margin_bottom = -147.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="Category4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 396, 15 )
+
+[node name="Label4" type="Label" parent="Category4"]
+margin_left = -376.0
+margin_top = 5.0
+margin_right = -274.0
+margin_bottom = 107.0
+custom_fonts/font = SubResource( 2 )
+align = 1
+valign = 1
+
+[node name="Piece41" parent="." instance=ExtResource( 1 )]
+position = Vector2( 396, 142 )
+
+[node name="Label41" type="Label" parent="Piece41"]
+margin_left = -376.0
+margin_top = 5.0
+margin_right = -274.0
+margin_bottom = 107.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="Piece42" parent="." instance=ExtResource( 1 )]
+position = Vector2( 396, 269 )
+
+[node name="Label42" type="Label" parent="Piece42"]
+margin_left = -376.0
+margin_top = -122.0
+margin_right = -274.0
+margin_bottom = -20.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="Piece43" parent="." instance=ExtResource( 1 )]
+position = Vector2( 396, 396 )
+
+[node name="Label43" type="Label" parent="Piece43"]
+margin_left = -376.0
+margin_top = -249.0
+margin_right = -274.0
+margin_bottom = -147.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="Category5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 523, 15 )
+
+[node name="Label5" type="Label" parent="Category5"]
+margin_left = -503.0
+margin_top = 5.0
+margin_right = -401.0
+margin_bottom = 107.0
+custom_fonts/font = SubResource( 2 )
+align = 1
+valign = 1
+
+[node name="Piece51" parent="." instance=ExtResource( 1 )]
+position = Vector2( 523, 142 )
+
+[node name="Label51" type="Label" parent="Piece51"]
+margin_left = -503.0
+margin_top = 5.0
+margin_right = -401.0
+margin_bottom = 107.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="Piece52" parent="." instance=ExtResource( 1 )]
+position = Vector2( 523, 269 )
+
+[node name="Label52" type="Label" parent="Piece52"]
+margin_left = -503.0
+margin_top = -122.0
+margin_right = -401.0
+margin_bottom = -20.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="Piece53" parent="." instance=ExtResource( 1 )]
+position = Vector2( 523, 396 )
+
+[node name="Label53" type="Label" parent="Piece53"]
+margin_left = -503.0
+margin_top = -249.0
+margin_right = -401.0
+margin_bottom = -147.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="Category6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 650, 15 )
+
+[node name="Label6" type="Label" parent="Category6"]
+margin_left = -630.0
+margin_top = 5.0
+margin_right = -528.0
+margin_bottom = 107.0
+custom_fonts/font = SubResource( 2 )
+align = 1
+valign = 1
+
+[node name="Piece61" parent="." instance=ExtResource( 1 )]
+position = Vector2( 650, 142 )
+
+[node name="Label61" type="Label" parent="Piece61"]
+margin_left = -630.0
+margin_top = 5.0
+margin_right = -528.0
+margin_bottom = 107.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="Piece62" parent="." instance=ExtResource( 1 )]
+position = Vector2( 650, 269 )
+
+[node name="Label62" type="Label" parent="Piece62"]
+margin_left = -630.0
+margin_top = -122.0
+margin_right = -528.0
+margin_bottom = -20.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="Piece63" parent="." instance=ExtResource( 1 )]
+position = Vector2( 650, 397 )
+
+[node name="Label63" type="Label" parent="Piece63"]
+margin_left = -630.0
+margin_top = -250.0
+margin_right = -528.0
+margin_bottom = -148.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "500"
+align = 1
+valign = 1
+
+[node name="TeamA" type="NinePatchRect" parent="."]
+self_modulate = Color( 0.960784, 0.411765, 0.411765, 1 )
+margin_left = 15.0
+margin_top = 524.0
+margin_right = 183.0
+margin_bottom = 584.0
+texture = ExtResource( 3 )
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2
+
+[node name="ScoreA" type="Label" parent="TeamA"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 163.0
+margin_bottom = 55.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+
+[node name="TeamB" type="NinePatchRect" parent="."]
+self_modulate = Color( 0.411765, 0.411765, 0.960784, 1 )
+margin_left = 594.0
+margin_top = 524.0
+margin_right = 762.0
+margin_bottom = 584.0
+texture = ExtResource( 3 )
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2
+
+[node name="ScoreB" type="Label" parent="TeamB"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 163.0
+margin_bottom = 55.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 2
+
+[node name="TimerShow" type="ProgressBar" parent="."]
+margin_left = 193.0
+margin_top = 524.0
+margin_right = 584.0
+margin_bottom = 584.0
+step = 20.0
+percent_visible = false
+
+[node name="TimerLabel" type="Label" parent="TimerShow"]
+margin_right = 391.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Timer" type="Timer" parent="TimerShow"]
+wait_time = 4.0
+
+[node name="GUI" parent="." instance=ExtResource( 6 )]
+visible = false
+
+[node name="Delay" type="Timer" parent="."]
+wait_time = 0.001
+one_shot = true
+
+[connection signal="timeout" from="TimerShow/Timer" to="." method="_on_Timer_timeout"]
+[connection signal="update" from="GUI" to="." method="_on_GUI_update"]
+[connection signal="timeout" from="Delay" to="." method="_on_Delay_timeout"]
