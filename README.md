@@ -21,7 +21,7 @@
 - Open using [Godot](https://godotengine.org/).
 
 ### Known Bugs
-- None yet... Report them [here](https://github.com/FTEdianiaK/library-parrotex/issues).
+- None yet... Report them [here](https://github.com/FTEdianiaK/M.Y.O.-Risk-Quiz/issues).
 
 ### Credits
 
